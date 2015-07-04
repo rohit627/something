@@ -1,7 +1,9 @@
 <nav>
     <h1>Brand</h1>
     <ul>
-        <li><a href="{{site.baseurl}}/index.html">Index</a></li>
-        <li><a href="{{site.baseurl}}/another.html">Another</a></li>
+        <li><a href="{{site.baseurl}}/index.html"
+               class="{% if page.url == '/index.html' %}hightlight{% endif %}">Index</a></li>
+        <li><a href="{{site.baseurl}}/another.html"
+               class="{% if page.url == '/another.html' %}hightlight{% endif %}">Another</a></li>
     </ul>
 </nav>
