@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+<h2>All posts</h2>
+<ul>
+    {% for post in site.categories.happy %}
+    <li>
+        <a href="#">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
